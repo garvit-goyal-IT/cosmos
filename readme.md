@@ -1,0 +1,2 @@
+## In this project i will use MERN stack to build a website which will be like the instagram version of zomato .. user can see food reels , view food items and can order them whereas ood partner can uplaod that reels and can list food items 
+## Tech stack used in this project will be MERN stack and some important libraries  
