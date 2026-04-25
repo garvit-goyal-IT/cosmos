@@ -18,4 +18,14 @@ router.get('/',
             authMiddleware.userModelMiddleware,
             foodController.getFoodItem
 )
+
+router.post('/like',
+            authMiddleware.userModelMiddleware,
+            foodController.likeFood
+)
+
+router.post('/save',
+            authMiddleware.userModelMiddleware,
+            foodController.saveFood
+)
 module.exports= router

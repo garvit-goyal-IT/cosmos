@@ -1,0 +1,95 @@
+.profile-container {
+    min-height: 100vh;
+    background: #0f172a;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  /* HEADER */
+  .profile-header {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  /* Top section */
+  .profile-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  /* Avatar */
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    border: 3px solid rgba(255,255,255,0.2);
+  }
+  
+  /* Info */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+    background: rgba(34,197,94,0.2);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  .address {
+    font-size: 14px;
+    background: rgba(34,197,94,0.15);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  /* Stats */
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .stat-label {
+    font-size: 13px;
+    opacity: 0.7;
+  }
+  
+  /* GRID */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 6px;
+  }
+  
+  /* Video cards */
+  .video-card {
+    aspect-ratio: 1 / 1;
+    background: #1e3a5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.03);
+  }

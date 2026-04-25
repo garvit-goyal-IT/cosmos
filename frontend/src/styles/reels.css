@@ -1,0 +1,146 @@
+/* Smooth scroll */
+.reels-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Reel */
+.reel {
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+/* Video */
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gradient */
+.reel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+/* ACTIONS */
+.actions {
+  position: absolute;
+  right: 12px;
+  bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  z-index: 2;
+}
+
+.action {
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.action span {
+  display: block;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ACTIVE LIKE */
+.action.active {
+  color: #ff3b5c;
+  transform: scale(1.2);
+}
+
+/* HOVER */
+.action:hover {
+  transform: scale(1.1);
+}
+
+/* BOTTOM */
+.overlay {
+  position: absolute;
+  bottom: 90px;
+  left: 16px;
+  right: 16px;
+  z-index: 2;
+}
+
+.description {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 15px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* NAV */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.nav-item.active {
+  color: #3b82f6;
+}
+.icon {
+  font-size: 28px;
+  color: white;
+  transition: 0.2s ease;
+}
+
+/* LIKE ACTIVE */
+.liked {
+  color: #ff3b5c;
+}
+
+/* SAVE ACTIVE */
+.saved {
+  color: white;
+}
+
+/* ACTION CONTAINER */
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+/* Click animation */
+.action:active .icon {
+  transform: scale(1.2);
+}

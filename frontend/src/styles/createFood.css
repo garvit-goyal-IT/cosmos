@@ -1,0 +1,102 @@
+.create-container {
+    min-height: 100vh;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  /* Form */
+  .create-form {
+    width: 100%;
+    max-width: 400px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Title */
+  .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .preview {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Input group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  /* Labels */
+  label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+  }
+  
+  /* Inputs */
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #334155;
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: none;
+    min-height: 80px;
+  }
+  
+  /* File input */
+  input[type="file"] {
+    background: transparent;
+    color: white;
+  }
+  
+  /* Button */
+  .submit-btn {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #22c55e;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #16a34a;
+  }
+  
+  /* 📱 Mobile-first → larger screens */
+  @media (min-width: 768px) {
+    .create-form {
+      padding: 24px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  }
